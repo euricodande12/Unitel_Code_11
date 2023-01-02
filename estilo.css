@@ -1,0 +1,433 @@
+/*---------- Reset CSS ----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------- Criação de variáveis ----------*/
+:root{
+    --tipo-de-letra: "Nunito", Helvética, arial, sans-serif;
+    --verde-escuro: #049A40;
+    --verde-claro: #0BF96A;
+    --rosa-escuro: #E10BF9;
+    --rosa-claro: #F3A0FD;
+}
+
+/*---------- Corpo ----------*/
+
+body{
+    font-family: var(--tipo-de-letra);
+}
+
+.cabecalho{
+    background-color: var(--verde-claro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.logo{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 15pt;
+}
+.seccao-da-lista-de-links{
+display: flex;
+align-items: center;
+}
+
+.seccao-da-lista-de-links .lista-de-links{
+    display: flex;
+    justify-content: center;
+}
+
+.item-da-nav{
+    margin: 0 15px;
+}
+
+.lista-de-links-da-barra-de-navegacao{
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 400;
+}
+
+.icone-do-menu-mobile{
+    display: none; /*Fazer desaparecer o ícone do menu*/
+}
+
+.menu-mobile{
+    display: none; /*Fazer desaparecer o menu mobile*/
+}
+
+ul:first-child{
+    padding-left: 0;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.intro{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+hr{
+    border: none;
+    background-color: var(--rosa-escuro);
+    height: 2px;
+    width: 140px;
+    margin: 20px auto;
+}
+
+/*---------- Quem somos ----------*/
+
+#quem-somos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.corpo-da-seccao-quem-somos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.titulo-da-seccao-quem-somos{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.texto-da-seccao-quem-somos{
+    flex: 6 1 160px;
+}
+
+p{
+    line-height: 21.28px; /*Espaçamento entre parágrafos*/
+    padding: 0 10px;
+}
+
+.imagem-da-seccao-quem-somos{
+    flex: 1 1 350px;
+}
+
+/*---------- Nossos cursos ----------*/
+
+.titulo-da-seccao-nossos-cursos{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.corpo-da-seccao-nossos-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.curso{
+    width: 280px;
+    margin: 0 20px;
+}
+
+.titulo-do-curso{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+h2{
+    text-align: center;
+}
+
+/*---------- Planos ----------*/
+
+.titulo-da-seccao-planos{
+    font-size: 3rem;
+    font-weight: normal;
+}
+.corpo-da-seccao-planos{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+ul{
+    list-style: none;
+}
+
+li a:hover{
+    color: white;
+}
+
+.planos{
+    background-color: var(--rosa-claro);
+}
+
+.plano{
+    width: 290px;
+    margin: 10px;
+    border: 3px solid var(--verde-claro);
+    text-align: center;
+}
+
+.basico{
+    height: 370px;
+}
+
+.premium{
+    height: 410px;
+}
+
+.ultra{
+    height: 450px;
+    border-color: var(--rosa-escuro);
+}
+
+.titulo-do-plano{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.preco-do-plano{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.preco-do-plano sup{
+    font-size: 1.5rem;
+    top: -20px;
+    
+}
+
+.divisor-de-plano{
+    background-color: var(--verde-claro);
+    width: 20px;
+    margin: 5px auto;
+}
+
+.divisor-de-plano-rosa{
+    background-color: var(--rosa-escuro);
+}
+
+.lista-do-plano{
+    max-width: 195px;
+    margin: 0 auto;
+}
+
+.item-da-lista-do-plano{
+    margin: 0 0 10px 0;
+}
+
+.item-da-lista-do-plano::before{
+    content: "";
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background-color: var(--verde-claro);
+    border-radius: 5px;
+    margin-left: -15px;
+}
+
+.botao-comprar-plano{
+    display: block;
+    max-width: 180px;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid var(--verde-claro);
+    color: black;
+}
+
+.botao-rosa{
+    border-color: var(--rosa-escuro);
+}
+
+.plano:last-child{
+    background-color: var(--verde-claro);
+}
+
+/*---------- Vantagens ----------*/
+
+.vantagens{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vantagem{
+    max-width: 240px;
+    margin: 10px;
+}
+
+.titulo-da-vantagem{
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.titulo-da-vantagem::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.vantagem:nth-of-type(3n+1) .titulo-da-vantagem::before{
+    background-color: var(--verde-claro);
+}
+
+.vantagem:nth-of-type(3n+2) .titulo-da-vantagem::before{
+    background-color: var(--rosa-escuro);
+}
+
+.vantagem:nth-of-type(3n+3) .titulo-da-vantagem::before{
+    background-color: var(--verde-escuro);
+}
+
+/*---------- Newsletter ----------*/
+
+.newsletter{
+    background-color: var(--verde-claro);
+}
+
+.newsletter-container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info{
+    padding-left: 10px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form{
+    flex: 2 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo-da-newsletter-info{
+    font-size: 2.62rem;
+    font-weight: bold;
+}
+
+.descricao-da-newsletter-info{
+    font-style: italic;
+}
+
+.input-do-newsletter-form{
+    flex: 3 1 260px;
+    font-size: 1.5rem;
+    width: 325px;
+    color: black;
+    font-style: italic;
+    border: 10px solid var(--rosa-escuro);
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    outline: none;
+}
+
+.botao-submit-do-newsletter-form{
+    width: 192px;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--rosa-escuro);
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+/*---------- Footer ----------*/
+
+.rodape{
+    background-color: var(--rosa-claro);
+    display: flex;
+    justify-content: space-around;
+    padding: 55px calc((100% - 960px) / 2);
+}
+
+.rodape-copyright, .logo-do-rodape{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.barra-de-navegacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.seccao-da-lista de links{
+    display: flex;
+}
+
+/*---------- Responsividade ----------*/
+
+@media screen and (max-width: 730px){
+    .item-da-nav{
+        display: none;
+    }
+
+    .icone-do-menu-mobile{
+        display: block;
+    }
+
+    .icone-do-menu-mobile button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .item-da-nav{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }
+}

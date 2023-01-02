@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontBox</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <section class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </section>
+            <nav class="barra-de-navegacao">
+                <section class="seccao-da-lista-de-links">
+                    <ul class="lista-de-links">
+                        <li class="item-da-nav preto"><a href="#quem-somos" class="lista-de-links-da-barra-de-navegacao ativo">Quem somos</a></li>
+                        <li class="item-da-nav preto"><a href="#nossos-cursos" class="lista-de-links-da-barra-de-navegacao">Nossos cursos</a></li>
+                        <li class="item-da-nav preto"><a href="#planos" class="lista-de-links-da-barra-de-navegacao">Planos</a></li>
+                        <li class="item-da-nav preto"><a href="#vantagens" class="lista-de-links-da-barra-de-navegacao">Vantagens</a></li>
+                    </ul>
+                </section>
+                
+                <section class="icone-do-menu-mobile">
+                    <button onclick="mostrarMenu()"><img src="img/menu_white_36dp.svg" alt="icone do menu" class="icon"></button>
+                </section>
+            </nav>
+
+            <section class="menu-mobile">
+                <ul>
+                    <li class="item-da-nav"><a href="#quem-somos" class="lista-de-links-da-barra-de-navegacao ativo">Quem somos</a></li>
+                    <li class="item-da-nav"><a href="#nossos-cursos" class="lista-de-links-da-barra-de-navegacao">Nossos cursos</a></li>
+                    <li class="item-da-nav"><a href="#planos" class="lista-de-links-da-barra-de-navegacao">Planos</a></li>
+                    <li class="item-da-nav"><a href="#vantagens" class="lista-de-links-da-barra-de-navegacao">Vantagens</a></li>
+                </ul>
+            </section>
+        </div>
+        <section>
+            <h1 class="intro">Aprenda a programar, <br> um projeto por vez!</h1>
+            <hr>
+        </section>
+    </header>
+
+    <main class="principal">
+
+        <section id="quem-somos">
+            <h2 class="titulo-da-seccao-quem-somos">Quem somos</h2>
+            <article class="corpo-da-seccao-quem-somos">
+                <div class="texto-da-seccao-quem-somos">
+                    <p>
+                        Lorem ipsum dolor sit amet. Est sint vero est molestias minus aut quas consequatur et rerum quisquam aut animi provident. 
+                        Ut quia adipisci ea vitae quidem ut aperiam animi et quia voluptatem! 
+                        Ea temporibus sunt eum assumenda rerum non vitae perspiciatis ea molestiae sapiente.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Aut odit corporis sit quis voluptas in expedita dolore aut corrupti culpa sed perferendis dolorum ut sunt ducimus. 
+                        Ut modi dolores et perferendis neque eos voluptates totam cum fugiat quia rem dolor nisi quo incidunt consequatur? 
+                        Qui suscipit tempora sit laudantium velit quo accusantium itaque quo iusto nostrum qui voluptatem doloribus.
+                    </p>
+                </div>
+
+                <div class="imagem-da-seccao-quem-somos">
+                    <img src="img/somos.png" alt="Imagem de um gato">
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="nossos-cursos" id="nossos-cursos">
+            <h2 class="titulo-da-seccao-nossos-cursos">Nossos cursos</h2>
+            <article class="corpo-da-seccao-nossos-cursos">
+                <section class="curso">
+                    <img src="img/ai.png" alt="Inteligência Artificial" class="imagem-da-seccao-nossos-cursos">
+                    <h3 class="titulo-do-curso">Inteligência Artificial</h3>
+                    <p class="descricao-do-curso">
+                        Sit quaerat omnis qui recusandae magnam non quia ipsa ut voluptate vitae in quia officia. 
+                        Eum velit porro vel consequatur omnis sit quam deserunt sit esse eveniet.
+                    </p>
+                </section>
+
+                <section class="curso">
+                    <img src="img/front.png" alt="Frontend" class="imagem-da-seccao-nossos-cursos">
+                    <h3 class="titulo-do-curso">Frontend</h3>
+                    <p class="descricao-do-curso">
+                        Sit quaerat omnis qui recusandae magnam non quia ipsa ut voluptate vitae in quia officia. 
+                        Eum velit porro vel consequatur omnis sit quam deserunt sit esse eveniet.
+                    </p>
+                </section>
+
+                <section class="curso">
+                    <img src="img/seguranca.png" alt="Segurança da Informação" class="imagem-da-seccao-nossos-cursos">
+                    <h3 class="titulo-do-curso">Segurança da Informação</h3>
+                    <p class="descricao-do-curso">
+                        Sit quaerat omnis qui recusandae magnam non quia ipsa ut voluptate vitae in quia officia. 
+                        Eum velit porro vel consequatur omnis sit quam deserunt sit esse eveniet.
+                    </p>
+                </section>
+            </article>
+        </section>
+        
+        <hr>
+
+        <section class="planos" id="planos">
+            <h2 class="titulo-da-seccao-planos">Planos</h2>
+            <article class="corpo-da-seccao-planos">
+                <section class="plano basico">
+                    <h3 class="titulo-do-plano">Básico</h3>
+                    <span class="preco-do-plano"><sup>R$</sup>25</span>
+                    <hr class="divisor-de-plano">
+                    <ul class="lista-do-plano">
+                        <li class="item-da-lista-do-plano">1 mês de acesso ilimitado</li>
+                        <li class="item-da-lista-do-plano">Acesso a todos os cursos</li>
+                        <li class="item-da-lista-do-plano">Certificado de conclusão</li>
+                    </ul>
+                    <a href="#" class="botao-comprar-plano">Comprar</a>
+                </section>
+
+                <section class="plano premium">
+                    <h3 class="titulo-do-plano">Premium</h3>
+                    <span class="preco-do-plano"><sup>R$</sup>40</span>
+                    <hr class="divisor-de-plano">
+                    <ul class="lista-do-plano">
+                        <li class="item-da-lista-do-plano">1 mês de acesso ilimitado</li>
+                        <li class="item-da-lista-do-plano">Acesso a todos os cursos</li>
+                        <li class="item-da-lista-do-plano">Certificado de conclusão</li>
+                        <li class="item-da-lista-do-plano">Suporte</li>
+                    </ul>
+                    <a href="#" class="botao-comprar-plano">Comprar</a>
+                </section>
+
+                <section class="plano ultra">
+                    <h3 class="titulo-do-plano">Ultra</h3>
+                    <span class="preco-do-plano"><sup>R$</sup>65</span>
+                    <hr class="divisor-de-plano divisor-de-plano-rosa">
+                    <ul class="lista-do-plano">
+                        <li class="item-da-lista-do-plano change">1 mês de acesso ilimitado</li>
+                        <li class="item-da-lista-do-plano change">Acesso a todos os cursos</li>
+                        <li class="item-da-lista-do-plano change">Certificado de conclusão</li>
+                        <li class="item-da-lista-do-plano change">Suporte</li>
+                        <li class="item-da-lista-do-plano change">Download das aulas</li>
+                    </ul>
+                    <a href="#" class="botao-comprar-plano botao-rosa">Comprar</a>
+                </section>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="vantagens" id="vantagens">
+                <section class="vantagem">
+                    <h3 class="titulo-da-vantagem">Foco em projeto</h3>
+                    <p class="descricao-da-vantagem">
+                        Lorem ipsum dolor sit amet. Et molestiae asperiores et aspernatur quia ut provident sint. 
+                        Vel temporibus perferendis ut Quis dolore et enim culpa et amet iure At voluptatem animi sit velit earum.
+                    </p>
+                </section>
+
+                <section class="vantagem">
+                    <h3 class="titulo-da-vantagem">Portifólio</h3>
+                    <p class="descricao-da-vantagem">
+                        Lorem ipsum dolor sit amet. Et molestiae asperiores et aspernatur quia ut provident sint. 
+                        Vel temporibus perferendis ut Quis dolore et enim culpa et amet iure At voluptatem animi sit velit earum.
+                    </p>
+                </section>
+
+                <section class="vantagem">
+                    <h3 class="titulo-da-vantagem">Aprenda fazendo</h3>
+                    <p class="descricao-da-vantagem">
+                        Lorem ipsum dolor sit amet. Et molestiae asperiores et aspernatur quia ut provident sint. 
+                        Vel temporibus perferendis ut Quis dolore et enim culpa et amet iure At voluptatem animi sit velit earum.
+                    </p>
+                </section>
+
+                <section class="vantagem">
+                    <h3 class="titulo-da-vantagem">Para todas as idades</h3>
+                    <p class="descricao-da-vantagem">
+                        Lorem ipsum dolor sit amet. Et molestiae asperiores et aspernatur quia ut provident sint. 
+                        Vel temporibus perferendis ut Quis dolore et enim culpa et amet iure At voluptatem animi sit velit earum.
+                    </p>
+                </section>
+
+                <section class="vantagem">
+                    <h3 class="titulo-da-vantagem">Atualizado</h3>
+                    <p class="descricao-da-vantagem">
+                        Lorem ipsum dolor sit amet. Et molestiae asperiores et aspernatur quia ut provident sint. 
+                        Vel temporibus perferendis ut Quis dolore et enim culpa et amet iure At voluptatem animi sit velit earum.
+                    </p>
+                </section>
+
+                <section class="vantagem">
+                    <h3 class="titulo-da-vantagem">Comece hoje</h3>
+                    <p class="descricao-da-vantagem">
+                        Lorem ipsum dolor sit amet. Et molestiae asperiores et aspernatur quia ut provident sint. 
+                        Vel temporibus perferendis ut Quis dolore et enim culpa et amet iure At voluptatem animi sit velit earum.
+                    </p>
+                </section>
+        </section>
+
+        <hr>
+
+        <section class="newsletter">
+            <article class="newsletter-container">
+                <section class="newsletter-info">
+                    <h2 class="titulo-da-newsletter-info">newsletter </h2>
+                    <p class="descricao-da-newsletter-info">Assine e fique por dentro das novidades </p>
+                </section>
+
+                <form action="" class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required class="input-do-newsletter-form">
+                    <button type="submit" class="botao-submit-do-newsletter-form">Assinar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-copyright">Este é o projeto que servirá de maquete para o projeto final</p>
+        <a href="index.html">
+            <img src="img/logo.png" alt="Frontbox" class="logo-do-rodape">
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
