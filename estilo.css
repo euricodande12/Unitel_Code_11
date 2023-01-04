@@ -243,12 +243,18 @@ li a:hover{
 
 .item-da-lista-do-plano::before{
     content: "";
-    display: flex;
+    display: block;
     width: 5px;
     height: 5px;
     background-color: var(--verde-claro);
     border-radius: 5px;
     margin-left: -15px;
+    position: relative;
+    top: 12px;
+}
+
+.change::before{
+    background-color: var(--rosa-escuro);
 }
 
 .botao-comprar-plano{
